@@ -25,6 +25,11 @@
 
 # Visual Studio cache directory
 .vs/
+.vscode/
+.vsconfig
+
+#mac
+**/.DS_Store
 
 # Gradle cache directory
 .gradle/
@@ -47,6 +52,7 @@ ExportedObj/
 *.opendb
 *.VC.db
 
+
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
@@ -60,6 +66,20 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
+
+# Lightmaps
+*.exr
+*.exr.meta
+Lightmap*.png
+Lightmap*.png.meta
+LightmapSnapshot.asset
+LightmapSnapshot.asset.meta
+LightingData.asset
+LightingData.asset.meta
+
+# NavMesh
+NavMesh.asset
+NavMesh.asset.meta
 
 # Crashlytics generated file
 crashlytics-build.properties
