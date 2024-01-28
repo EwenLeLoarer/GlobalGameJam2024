@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 25fb1b0debfde494d97b925380d90887
+  - enabled: 1
+    path: Assets/Scenes/scene Ewen.unity
+    guid: 6d114842dafe32d4d8dd22a3de810aff
   m_configObjects: {}
