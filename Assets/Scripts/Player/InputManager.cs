@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,8 @@ public class InputManager : MonoBehaviour
     private InputAction _useItemAction;
     [HideInInspector] public Vector2 MovementXY;
     [HideInInspector] public bool IsMoving;
-    [HideInInspector] public bool useItem;
+
+    public event Action OnUseItem;
 
     void Awake()
     {
@@ -19,9 +21,23 @@ public class InputManager : MonoBehaviour
         _useItemAction = _playerInput.actions["UseItem"];
     }
 
+    void OnEnable()
+    {
+        _useItemAction.performed += UseItem;
+    }
+
+    void OnDisable()
+    {
+        _useItemAction.performed -= UseItem;
+    }
+
+    void UseItem(InputAction.CallbackContext context)
+    {
+        OnUseItem?.Invoke();
+    }
+
     void Update()
     {
-        useItem = _useItemAction.triggered;
         MovementXY = _moveAction.ReadValue<Vector2>();
         IsMoving = _moveAction.IsPressed();
     }

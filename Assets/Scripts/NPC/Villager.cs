@@ -26,14 +26,15 @@ public class Villager : MonoBehaviour
         }
     }
 
-    void FallOnBanana()
+    public void FallOnBanana()
     {
-        var colliders = Physics.OverlapSphere(transform.position, 10f, Layers.NPCLayerMask);
+        var colliders = Physics.OverlapSphere(transform.position, 50f, Layers.NPCLayerMask);
+        print((colliders, colliders.Length));
         foreach (var collider in colliders)
         {
             if (collider.TryGetComponent(out Villager villager))
             {
-                if (villager == this) continue;
+                if (villager.gameObject == this.gameObject) continue;
                 villager.StartLaughing();
             }
         }
@@ -42,5 +43,6 @@ public class Villager : MonoBehaviour
     public void StartLaughing()
     {
         _laughTimer = _laughtingTime;
+        IsLaughing = true;
     }
 }
