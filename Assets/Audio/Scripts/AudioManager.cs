@@ -80,13 +80,7 @@ public class AudioManager : MonoBehaviour
 
         Sound s = Instance._soundsMap[name];
 
-        GameObject obj = Instance._audioPool.GetAvailablePoolObject();
-        if (obj == null) return;
-        AudioSource audioSource = obj.GetComponent<AudioSource>();
-
-        obj.transform.localPosition = Vector3.zero;
-        obj.transform.rotation = Quaternion.identity;
-        // obj.transform.SetParent(null, false);
+        AudioSource audioSource = Instance._effectsSource;
 
         audioSource.clip = s.clip;
         audioSource.outputAudioMixerGroup = Instance._audioMixerGroupEffects; // effect audioMixer by default
