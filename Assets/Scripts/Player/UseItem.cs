@@ -23,7 +23,7 @@ public class UseItem : MonoBehaviour
             foreach(var item in Inventory.Instance.Items)
             {
                 //Inventory.Instance.Remove(item.Key);
-                var obj = Instantiate(BananaPrefab, new Vector3(transform.position.x + 2, transform.position.y, transform.position.z), Quaternion.identity);
+                var obj = Instantiate(BananaPrefab, transform.position, Quaternion.identity);
                 
             }
         }
