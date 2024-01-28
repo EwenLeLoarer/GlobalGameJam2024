@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SpriteFaceCamera : MonoBehaviour
+public class Billboard : MonoBehaviour
 {
     private Transform _mainCameraTransform;
 
