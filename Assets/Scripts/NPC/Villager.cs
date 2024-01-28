@@ -6,8 +6,10 @@ public class Villager : MonoBehaviour
 {
     public bool IsLaughing;
 
-    [SerializeField] float _laughtingTime = 7f;
+    [SerializeField] float _laughtingTime = 3f;
     private float _laughTimer;
+
+    [SerializeField] SoundEffectSO _laughSE;
 
     void Awake()
     {
@@ -44,5 +46,7 @@ public class Villager : MonoBehaviour
     {
         _laughTimer = _laughtingTime;
         IsLaughing = true;
+
+        _laughSE.Play();
     }
 }
