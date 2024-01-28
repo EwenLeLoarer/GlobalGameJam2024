@@ -42,6 +42,8 @@ public class Guard : MonoBehaviour
             ChangeWaypointToNext();
         }
 
+        // Physics.OverlapSphere(transform.position, 10f, );
+
         _navMeshAgent.SetDestination( GetWaypointPosition() );
     }
 

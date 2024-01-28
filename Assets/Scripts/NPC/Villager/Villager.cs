@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Villager : MonoBehaviour
 {
+    public bool IsLaughing;
+
     void Awake()
     {
-
+        IsLaughing = false;
     }
 
     void Update()
