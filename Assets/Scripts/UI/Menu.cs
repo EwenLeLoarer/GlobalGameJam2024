@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    [SerializeField] private AudioClip _clip;
     public void Play()
     {
         AudioManager.PlaySound2D("Click");
-        SceneManager.LoadScene("scene Ewen");
+
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene + 1);
     }
 
     public void Exit()

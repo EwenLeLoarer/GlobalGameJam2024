@@ -31,7 +31,6 @@ public class Villager : MonoBehaviour
     public void FallOnBanana()
     {
         var colliders = Physics.OverlapSphere(transform.position, 20f, Layers.NPCLayerMask);
-        print((colliders, colliders.Length));
         foreach (var collider in colliders)
         {
             if (collider.TryGetComponent(out Villager villager))

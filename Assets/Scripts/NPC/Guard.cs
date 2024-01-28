@@ -71,7 +71,8 @@ public class Guard : MonoBehaviour
     void ArrestVillager()
     {
         _navMeshAgent.SetDestination( _villagerTarget.transform.position );
-        if (_navMeshAgent.remainingDistance < 1.25f)
+
+        if (Vector3.Distance(transform.position, _villagerTarget.transform.position) < 1.5f)
         {
             Destroy(_villagerTarget);
             _state = State.Patrol;
