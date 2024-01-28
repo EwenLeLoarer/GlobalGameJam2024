@@ -44,18 +44,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: e0c8fc7f631568040b1477664889a85b, type: 2}
+  m_Material: {fileID: 2100000, guid: d28389dd84d5072419f1e0647e67d93f, type: 2}
   m_DrawDistance: 100
   m_FadeScale: 1
   m_StartAngleFade: 180
   m_EndAngleFade: 180
-  m_UVScale: {x: 0.69054985, y: 0.69013727}
-  m_UVBias: {x: 0.12965107, y: 0.1727902}
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
   m_DecalLayerMask: 1
   m_ScaleMode: 0
-  m_Offset: {x: -0.025074005, y: 0.017858833, z: 0.28564176}
-  m_Size: {x: 0.69054985, y: 0.69013727, z: 0.5686256}
-  m_FadeFactor: 1
+  m_Offset: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.7, y: 0.7, z: 0.5}
+  m_FadeFactor: 0.6
 --- !u!1 &2056277573193554573
 GameObject:
   m_ObjectHideFlags: 0
