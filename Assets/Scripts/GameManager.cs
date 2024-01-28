@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 
     // public bool IsPaused = false;
     // [SerializeField] private GameObject _UIPrefab;
+    [SerializeField] GameObject _audioManagerPrefab;
 
     void Awake()
     {
@@ -15,5 +16,12 @@ public class GameManager : MonoBehaviour
             return;
         }
         Instance = this;
+
+        InitScene();
+    }
+
+    void InitScene()
+    {
+        Instantiate(_audioManagerPrefab);
     }
 }

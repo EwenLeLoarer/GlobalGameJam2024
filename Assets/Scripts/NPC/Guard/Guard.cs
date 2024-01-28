@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 public class Guard : MonoBehaviour
 {
-    enum State {Patrol, Chase};
+    enum State {Patrol, Chase, ArrestVillager};
 
     [SerializeField] private Transform[] _waypoints;
 
@@ -14,6 +14,8 @@ public class Guard : MonoBehaviour
     private int _waypointIndex = 0;
 
     private State _state = State.Patrol;
+
+    private GameObject _villagerTarget = null;
 
     void Awake()
     {
@@ -31,25 +33,48 @@ public class Guard : MonoBehaviour
             case State.Chase:
                 Chase();
                 break;
+            case State.ArrestVillager:
+                Chase();
+                break;
         }
     }
 
     void Patrol()
     {
-        float distanceToDestination = _navMeshAgent.remainingDistance;
-        if (distanceToDestination < 0.3f)
+        if (_navMeshAgent.remainingDistance < 0.3f)
         {
             ChangeWaypointToNext();
         }
-
-        // Physics.OverlapSphere(transform.position, 10f, );
-
         _navMeshAgent.SetDestination( GetWaypointPosition() );
+
+        /* detect laughing villager */
+        var colliders = Physics.OverlapSphere(transform.position, 10f, Layers.NPCLayerMask);
+        foreach (var collider in colliders)
+        {
+            if (collider.TryGetComponent(out Villager villager))
+            {
+                if (villager.IsLaughing)
+                {
+                    _villagerTarget = villager.gameObject;
+                    _state = State.ArrestVillager;
+                    return;
+                }
+            }
+        }
     }
 
     void Chase()
     {
 
+    }
+
+    void ArrestVillager()
+    {
+        _navMeshAgent.SetDestination( _villagerTarget.transform.position );
+        if (_navMeshAgent.remainingDistance < 0.4f)
+        {
+            // arrest de village
+        }
     }
 
     void ChangeWaypointToNext()
