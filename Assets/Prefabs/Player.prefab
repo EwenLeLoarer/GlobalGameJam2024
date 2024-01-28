@@ -54,8 +54,8 @@ MonoBehaviour:
   m_DecalLayerMask: 1
   m_ScaleMode: 0
   m_Offset: {x: 0, y: 0, z: 0}
-  m_Size: {x: 0.7, y: 0.7, z: 0.5}
-  m_FadeFactor: 0.6
+  m_Size: {x: 0.7, y: 0.7, z: 1}
+  m_FadeFactor: 0.25
 --- !u!1 &2056277573193554573
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BindingMode: 1
   m_FollowOffset: {x: 0, y: 1.5, z: -3.05}
-  m_XDamping: 0.3
+  m_XDamping: 0.05
   m_YDamping: 0.3
   m_ZDamping: 0.3
   m_AngularDampingMode: 0
