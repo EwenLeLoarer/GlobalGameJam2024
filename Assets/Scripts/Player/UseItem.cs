@@ -1,31 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class UseItem : MonoBehaviour
 {
     private InputManager _inputManager;
     private CharacterController _characterController;
-    [SerializeField]private GameObject BananaPrefab;
+    [SerializeField] private GameObject _bananaPrefab;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         _inputManager = GetComponent<InputManager>();
         _characterController = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnEnable()
     {
-        if(_inputManager.useItem)
-        {
-            foreach(var item in Inventory.Instance.Items)
-            {
-                //Inventory.Instance.Remove(item.Key);
-                var obj = Instantiate(BananaPrefab, transform.position, Quaternion.identity);
-                
-            }
-        }
+        _inputManager.OnUseItem += DoUseItem;
+    }
+
+    void OnDisable()
+    {
+        _inputManager.OnUseItem -= DoUseItem;
+    }
+
+    void DoUseItem()
+    {
+        // if (Inventory.Instance.Items.Count == 0) return;
+
+        // var item = Inventory.Instance.Items.First();
+        // Inventory.Instance.Remove();
+
+        var obj = Instantiate(_bananaPrefab, transform.position, Quaternion.identity);
     }
 }

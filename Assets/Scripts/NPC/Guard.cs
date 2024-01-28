@@ -34,7 +34,7 @@ public class Guard : MonoBehaviour
                 Chase();
                 break;
             case State.ArrestVillager:
-                Chase();
+                ArrestVillager();
                 break;
         }
     }
@@ -48,7 +48,7 @@ public class Guard : MonoBehaviour
         _navMeshAgent.SetDestination( GetWaypointPosition() );
 
         /* detect laughing villager */
-        var colliders = Physics.OverlapSphere(transform.position, 10f, Layers.NPCLayerMask);
+        var colliders = Physics.OverlapSphere(transform.position, 50f, Layers.NPCLayerMask);
         foreach (var collider in colliders)
         {
             if (collider.TryGetComponent(out Villager villager))
@@ -71,9 +71,10 @@ public class Guard : MonoBehaviour
     void ArrestVillager()
     {
         _navMeshAgent.SetDestination( _villagerTarget.transform.position );
-        if (_navMeshAgent.remainingDistance < 0.4f)
+        if (_navMeshAgent.remainingDistance < 1f)
         {
-            // arrest de village
+            Destroy(_villagerTarget);
+            _state = State.Patrol;
         }
     }
 
