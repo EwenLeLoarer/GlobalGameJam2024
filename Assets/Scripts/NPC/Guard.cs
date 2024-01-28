@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -48,7 +45,7 @@ public class Guard : MonoBehaviour
         _navMeshAgent.SetDestination( GetWaypointPosition() );
 
         /* detect laughing villager */
-        var colliders = Physics.OverlapSphere(transform.position, 50f, Layers.NPCLayerMask);
+        var colliders = Physics.OverlapSphere(transform.position, 20f, Layers.NPCLayerMask);
         foreach (var collider in colliders)
         {
             if (collider.TryGetComponent(out Villager villager))
@@ -71,7 +68,7 @@ public class Guard : MonoBehaviour
     void ArrestVillager()
     {
         _navMeshAgent.SetDestination( _villagerTarget.transform.position );
-        if (_navMeshAgent.remainingDistance < 1f)
+        if (_navMeshAgent.remainingDistance < 1.25f)
         {
             Destroy(_villagerTarget);
             _state = State.Patrol;
