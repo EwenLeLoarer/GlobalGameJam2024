@@ -12,7 +12,7 @@ public class Guard : MonoBehaviour
 
     private NavMeshAgent _navMeshAgent;
     private int _waypointIndex = 0;
-
+    private Animator _animator;
     private State _state = State.Patrol;
 
     private GameObject _villagerTarget = null;
@@ -21,10 +21,13 @@ public class Guard : MonoBehaviour
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
         transform.position = _waypoints[_waypointIndex].transform.position;
+        _animator = GetComponentInChildren<Animator>();
     }
 
     void FixedUpdate()
     {
+        _animator.SetFloat(Animator.StringToHash("X"), _navMeshAgent.velocity.x);
+        _animator.SetFloat(Animator.StringToHash("Y"), _navMeshAgent.velocity.y);
         switch (_state)
         {
             case State.Patrol:
