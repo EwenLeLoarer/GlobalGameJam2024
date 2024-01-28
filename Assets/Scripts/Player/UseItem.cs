@@ -9,6 +9,8 @@ public class UseItem : MonoBehaviour
     private CharacterController _characterController;
     [SerializeField] private GameObject _bananaPrefab;
 
+    [SerializeField] private Transform _bananaSpawnTransform;
+
     void Awake()
     {
         _inputManager = GetComponent<InputManager>();
@@ -32,6 +34,6 @@ public class UseItem : MonoBehaviour
         // var item = Inventory.Instance.Items.First();
         // Inventory.Instance.Remove();
 
-        var obj = Instantiate(_bananaPrefab, transform.position, Quaternion.identity);
+        var obj = Instantiate(_bananaPrefab, _bananaSpawnTransform.position, Quaternion.identity);
     }
 }

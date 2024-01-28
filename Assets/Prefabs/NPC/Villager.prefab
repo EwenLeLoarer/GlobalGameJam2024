@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsLaughing: 0
   _laughtingTime: 7
+  _laughSE: {fileID: 11400000, guid: e583e63cf0100b54ba232c6982150072, type: 2}
 --- !u!114 &6669191915811911198
 MonoBehaviour:
   m_ObjectHideFlags: 0
