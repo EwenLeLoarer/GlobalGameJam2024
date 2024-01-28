@@ -1,0 +1,518 @@
+fileFormatVersion: 2
+guid: 0b7219bf22f992642bbe05d3e1464830
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 494
+        width: 78
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747b8e9ae7848b24995b1cae8a74f967
+      internalID: 31888752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 496
+        width: 83
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf06527fc5771348ac7cac0a78e751c
+      internalID: -1804280132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_2
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 495
+        width: 96
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e7b667e5ee2954d9a2bfa7ef734adb
+      internalID: -1261043559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_3
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 496
+        width: 97
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5e41918fa79254c8ba0f8404dda062
+      internalID: -357931655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_4
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 336
+        width: 99
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5cd06c33b1ef84d81e6423ac7c0e97
+      internalID: -759515129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_5
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 334
+        width: 111
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4212ccc1d0b02489d375a0d275cd53
+      internalID: -788659986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_6
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 338
+        width: 103
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11da4ff484e6c246b805fab8a1f2657
+      internalID: -2107967299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 337
+        width: 112
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e041917f2161444b013206a44ad715
+      internalID: 1221023220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 174
+        width: 103
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1004f4c0320504fa7120337586b1ed
+      internalID: 120258709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_9
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 174
+        width: 86
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f432a2edb95358458202a5afe20055d
+      internalID: 2025919760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_10
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 176
+        width: 102
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4aead6b1e97364a93dbe96f1e7aa56
+      internalID: -958125712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_11
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 171
+        width: 98
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bd281f7fc952f4fb729c3e8f2c2d9f
+      internalID: -850478714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_12
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 20
+        width: 80
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2e658b5f3f60943909fa70f508c0b6
+      internalID: 2123504799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_13
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 21
+        width: 74
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52c1997349f9c74290b739ae7caddf5
+      internalID: 294551646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_14
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 13
+        width: 102
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae82a1f3b2b1c5b49ba396258231aa59
+      internalID: 407749556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_15
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 14
+        width: 80
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b8b42a04520f242ae84a63f43cbe2d
+      internalID: -1021127018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5de3276f92d1fdb42836f2de1487f649
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_0: 31888752
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_1: -1804280132
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_10: -958125712
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_11: -850478714
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_12: 2123504799
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_13: 294551646
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_14: 407749556
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_15: -1021127018
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_2: -1261043559
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_3: -357931655
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_4: -759515129
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_5: -788659986
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_6: -2107967299
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_7: 1221023220
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_8: 120258709
+      2dpixx_-_free_assets_-_wizard_character_size_128x160_isometric_-_walk_9: 2025919760
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

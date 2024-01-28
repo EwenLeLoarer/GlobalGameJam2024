@@ -19,7 +19,9 @@ public class InputManager : MonoBehaviour
 
     void Update()
     {
+
         MovementXY = _moveAction.ReadValue<Vector2>();
+        print(MovementXY);
         IsMoving = _moveAction.IsPressed();
     }
 }
